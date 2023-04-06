@@ -6,7 +6,7 @@ import App from "./App";
 console.log(process.env.REACT_APP_ENVIRONMENT)
 
 if (process.env.REACT_APP_ENVIRONMENT === "local") {
-  const { worker } = require("./mocks/browser");
+  const { worker } = require("./mocks/mswConfig/browser");
   worker.start();
 }
 

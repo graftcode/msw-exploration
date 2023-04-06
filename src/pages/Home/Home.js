@@ -1,14 +1,10 @@
 import React, { useState } from "react";
-
 import { Link } from "react-router-dom";
 
-import MovieIcon from "../../assets/MovieIcon";
-
-import "./Home.css";
 import { getMovies } from "../../axios";
 import NoImageAvailable from "../../assets/NoImageAvailable.png";
 
-const useMock = process.env.REACT_APP_ENVIRONMENT === "local";
+import "./Home.css";
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -60,7 +56,7 @@ const Home = () => {
   };
 
   return (
-    <section>
+    <section className="search-movies">
       <form className="search-movies-form" onSubmit={handleSubmit}>
         <button className="search-movies-form-button">🔍</button>
         <input
@@ -72,10 +68,8 @@ const Home = () => {
 
       <div className="search-movies-result">
         {moviesData.length > 0 &&
-          moviesData.map((movie) => {
-            const movieImage = useMock ? (
-              <MovieIcon />
-            ) : (
+          moviesData.map((movie) => (
+            <div className="movie-item" key={movie.imdbID}>
               <img
                 src={movie.Poster}
                 onError={({ currentTarget }) => {
@@ -84,17 +78,11 @@ const Home = () => {
                 }}
                 alt={movie.Title}
               />
-            );
-
-            return (
-              <div className="movie-item" key={movie.imdbID}>
-                {movieImage}
-                <Link to={`/${movie.imdbID}`} className="link">
-                  {movie.Title}
-                </Link>
-              </div>
-            );
-          })}
+              <Link to={`${movie.imdbID}`} className="link">
+                {movie.Title}
+              </Link>
+            </div>
+          ))}
       </div>
       {pageNumber !== numberOfPages && (
         <button className="load-more-button" onClick={handleLoadMore}>

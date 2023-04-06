@@ -4,7 +4,7 @@ import { getMovieInformation } from "../../axios";
 import { useNavigate, useParams } from "react-router-dom";
 
 import "./MovieInformation.css";
-import Spinner from "./Spinner/Spinner";
+import Spinner from "../../components/Spinner/Spinner";
 
 const MovieInformation = () => {
   const [movieData, setMovieData] = useState(null);
@@ -26,7 +26,7 @@ const MovieInformation = () => {
     };
 
     fetchMovie();
-  }, []);
+  }, [movieId]);
 
   if (!movieData) {
     return <Spinner />;
@@ -44,19 +44,19 @@ const MovieInformation = () => {
   }
 
   return (
-    <section>
+    <section className="movie-information">
       <button className="link-button" onClick={() => navigate(-1)}>
         {"⬅ "}Back
       </button>
-      <div className="movie-container">
+      <div className="movie-information-wrapper">
         <img src={movieData?.Poster} alt={movieData.ImdbID} />
-        <div className="movie-information">
+        <div className="movie-information-text">
           <h2>{movieData.Title}</h2>
-          <div className="movie-rating">
+          <div className="movie-information-rating">
             Rating: {movieData.Ratings?.[0].Value}
           </div>
-          <div className="movie-description">{movieData.Plot}</div>
-          <p className="movie-release-date">{movieData.Released}</p>
+          <div className="movie-information-description">{movieData.Plot}</div>
+          <p className="movie-information-release">{movieData.Released}</p>
         </div>
       </div>
     </section>
