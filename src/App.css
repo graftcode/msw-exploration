@@ -1,75 +1,35 @@
 h1 {
   font-size: 52px;
+  margin: 0 auto 32px;
 }
 
 .container {
   max-width: 1140px;
-  margin: 100px auto;
+  margin: auto;
   padding: 50px 32px;
 }
 
-.search-movies-form {
-  margin-bottom: 32px;
-  font-size: 24px;
-  padding: 10px;
-  border: solid 1px;
-  display: block;
-}
-
-.search-movies-form input {
-  font-size: 24px;
-  padding: 10px;
-  border: none;
-  outline: none;
-}
-
-.search-movies-form-button {
-  border: none;
-  background: none;
-  padding: 5px;
-  font-size: 32px;
-}
-
-.search-movies-result {
-  display: grid;
-  column-gap: 32px;
-  row-gap: 32px;
-  margin-bottom: 32px;
-}
-
-@media (min-width: 425px) {
-  .search-movies-result {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 767px) {
-  .search-movies-result {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-.movie-item {
-  padding: 16px;
-  border: solid 2px black;
-  border-radius: 10px;
-}
-
-.movie-item img {
-  height: 300px;
-  width: 100%;
-}
-
-.movie-icon {
-  width: 100%;
-}
-
-.load-more-button {
-  margin: auto;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background: none;
-  display: block;
-  font-size: 24px;
+.error-message {
   font-weight: 700;
+  font-size: 24px;
+  color: red;
+  text-align: center;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.link-button:hover {
+  color: #60a5fa;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
 }
