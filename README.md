@@ -9,7 +9,7 @@ A simple movie library that allows users to search for movies and view more info
 The main purpose of this project was to expirement with [Mock Service Worker](https://mswjs.io/).
 
 
-## see src/mocks/mswConfig
+- **see src/mocks/mswConfig**
 
 ## Learnt
 
