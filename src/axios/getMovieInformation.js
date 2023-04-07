@@ -8,8 +8,6 @@ export const getMovieInformation = async (movieId) => {
 
     return response;
   } catch (e) {
-    console.log(e);
-
     return {
       error: {
         message: e?.response?.data?.Error,
