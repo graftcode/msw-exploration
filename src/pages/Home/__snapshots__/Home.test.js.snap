@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> Search movie form renders a list on movies when form is submitted successfully 1`] = `
+Array [
+  <div
+    class="search-movies-result"
+    data-testid="search-movies-result"
+  >
+    <div
+      class="movie-item"
+      data-testid="movie-item"
+    >
+      <img
+        alt="The ABC Murders"
+        src="https://m.media-amazon.com/images/M/MV5BYmJmNzU0NTgtOGM5Ni00MWJiLTgwZmMtNDIyNjYzZDAzNzI5XkEyXkFqcGdeQXVyMjExMjk0ODk@._V1_SX300.jpg"
+      />
+      <a
+        class="link"
+        data-testid="link"
+        href="/1tt8463714"
+      >
+        The ABC Murders
+      </a>
+    </div>
+    <div
+      class="movie-item"
+      data-testid="movie-item"
+    >
+      <img
+        alt="ABC Afterschool Specials"
+        src="https://m.media-amazon.com/images/M/MV5BOTY2MmRiZjQtM2MyMC00MDViLThhMjUtYzZiN2JkYzA4NDE5XkEyXkFqcGdeQXVyMTY2MzYyNzA@._V1_SX300.jpg"
+      />
+      <a
+        class="link"
+        data-testid="link"
+        href="/1tt0202179"
+      >
+        ABC Afterschool Specials
+      </a>
+    </div>
+    <div
+      class="movie-item"
+      data-testid="movie-item"
+    >
+      <img
+        alt="ABC Africa"
+        src="https://m.media-amazon.com/images/M/MV5BMTU5ODc1ODc2Ml5BMl5BanBnXkFtZTcwMzEyOTgyMQ@@._V1_SX300.jpg"
+      />
+      <a
+        class="link"
+        data-testid="link"
+        href="/1tt0281534"
+      >
+        ABC Africa
+      </a>
+    </div>
+    <div
+      class="movie-item"
+      data-testid="movie-item"
+    >
+      <img
+        alt="ABC TGIF"
+        src="https://m.media-amazon.com/images/M/MV5BMDY2M2MyZTEtYmZlZi00NTUyLWE4MWItNDg3YmIzY2VjZWYyXkEyXkFqcGdeQXVyMTEwODg2MDY@._V1_SX300.jpg"
+      />
+      <a
+        class="link"
+        data-testid="link"
+        href="/1tt0312324"
+      >
+        ABC TGIF
+      </a>
+    </div>
+    <div
+      class="movie-item"
+      data-testid="movie-item"
+    >
+      <img
+        alt="ABC World News Tonight with David Muir"
+        src="https://m.media-amazon.com/images/M/MV5BYWZjYWYyMjctMjIyMS00YzM5LWExYzctZmI4OWFmZDQyNGQ1XkEyXkFqcGdeQXVyNzU5OTQ1MDM@._V1_SX300.jpg"
+      />
+      <a
+        class="link"
+        data-testid="link"
+        href="/1tt0184090"
+      >
+        ABC World News Tonight with David Muir
+      </a>
+    </div>
+    <div
+      class="movie-item"
+      data-testid="movie-item"
+    >
+      <img
+        alt="ABC News Nightline"
+        src="https://m.media-amazon.com/images/M/MV5BYTNiODgzYWItYmYyNi00NDk1LWEzOGUtNjUyZjg3NmU5YTJhXkEyXkFqcGdeQXVyODg3NDc1OTE@._V1_SX300.jpg"
+      />
+      <a
+        class="link"
+        data-testid="link"
+        href="/1tt0154053"
+      >
+        ABC News Nightline
+      </a>
+    </div>
+    <div
+      class="movie-item"
+      data-testid="movie-item"
+    >
+      <img
+        alt="ABC Weekend Specials"
+        src="https://m.media-amazon.com/images/M/MV5BNjllM2ViM2MtNTJkYi00YjZhLTkyMjEtMzBkZWU1OGQzYTA0XkEyXkFqcGdeQXVyMTg2NjYzOA@@._V1_SX300.jpg"
+      />
+      <a
+        class="link"
+        data-testid="link"
+        href="/1tt0075471"
+      >
+        ABC Weekend Specials
+      </a>
+    </div>
+    <div
+      class="movie-item"
+      data-testid="movie-item"
+    >
+      <img
+        alt="Garotas do ABC"
+        src="https://m.media-amazon.com/images/M/MV5BZjdkMTkyMTMtMmU1MC00MDYyLWEwMWUtMDdiYzYwNmI0ZjZiXkEyXkFqcGdeQXVyMTU2ODc4ODQ@._V1_SX300.jpg"
+      />
+      <a
+        class="link"
+        data-testid="link"
+        href="/1tt0327451"
+      >
+        Garotas do ABC
+      </a>
+    </div>
+    <div
+      class="movie-item"
+      data-testid="movie-item"
+    >
+      <img
+        alt="ABC da Greve"
+        src="https://m.media-amazon.com/images/M/MV5BNDMxN2FjMjAtNTQ4YS00MWE0LWIzMjktZjc0YTUxOTc5YWFkXkEyXkFqcGdeQXVyOTU3ODk4MQ@@._V1_SX300.jpg"
+      />
+      <a
+        class="link"
+        data-testid="link"
+        href="/1tt0317051"
+      >
+        ABC da Greve
+      </a>
+    </div>
+    <div
+      class="movie-item"
+      data-testid="movie-item"
+    >
+      <img
+        alt="ABC Late Night"
+        src="https://m.media-amazon.com/images/M/MV5BNzQxOTAyYTMtODczNy00MWUxLTlkY2YtY2VkOGVmNmM3YmIxXkEyXkFqcGdeQXVyMjcyMDU4NA@@._V1_SX300.jpg"
+      />
+      <a
+        class="link"
+        data-testid="link"
+        href="/1tt0176356"
+      >
+        ABC Late Night
+      </a>
+    </div>
+  </div>,
+]
+`;

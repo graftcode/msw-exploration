@@ -56,7 +56,7 @@ const Home = () => {
   };
 
   return (
-    <section className="search-movies">
+    <section className="search-movies" data-testid="search-movies">
       <form className="search-movies-form" onSubmit={handleSubmit}>
         <button className="search-movies-form-button">🔍</button>
         <input
@@ -66,10 +66,14 @@ const Home = () => {
         />
       </form>
 
-      <div className="search-movies-result">
+      <div className="search-movies-result" data-testid="search-movies-result">
         {moviesData.length > 0 &&
           moviesData.map((movie) => (
-            <div className="movie-item" key={movie.imdbID}>
+            <div
+              data-testid="movie-item"
+              className="movie-item"
+              key={movie.imdbID}
+            >
               <img
                 src={movie.Poster}
                 onError={({ currentTarget }) => {
@@ -78,7 +82,7 @@ const Home = () => {
                 }}
                 alt={movie.Title}
               />
-              <Link to={`${movie.imdbID}`} className="link">
+              <Link data-testid="link" to={`${movie.imdbID}`} className="link">
                 {movie.Title}
               </Link>
             </div>
