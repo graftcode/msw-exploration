@@ -1,5 +1,5 @@
 {
-  "name": "napo-movies",
+  "name": "Movies-library",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -43,5 +43,10 @@
   },
   "msw": {
     "workerDirectory": "public"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!axios)"
+    ]
   }
 }

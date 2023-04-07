@@ -18,12 +18,12 @@ const router = createBrowserRouter([
   },
 ]);
 
-function App() {
+const App = () => {
   return (
     <Layout>
       <RouterProvider router={router} />
     </Layout>
   );
-}
+};
 
 export default App;
