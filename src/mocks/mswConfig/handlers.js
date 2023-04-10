@@ -1,7 +1,6 @@
 import { rest } from "msw";
 
-import { searchMoviesMock } from "../searchMoviesMock";
-import { movieInformationMock } from "../movieInformationMock";
+import { movieInformationMock, searchMoviesMock } from "../index";
 
 export const handlers = [
   rest.get("https://www.omdbapi.com", (req, res, ctx) => {

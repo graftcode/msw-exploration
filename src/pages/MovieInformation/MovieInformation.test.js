@@ -5,7 +5,7 @@ import { rest } from "msw";
 import MovieInformation from "./MovieInformation";
 
 import { setup } from "../../testUtils/setup";
-import { movieInformationMock } from "../../mocks/movieInformationMock";
+import { movieInformationMock } from "../../mocks";
 
 const mockData = movieInformationMock();
 

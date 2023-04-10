@@ -4,7 +4,7 @@ import { rest } from "msw";
 
 import Home from "./Home";
 
-import { searchMoviesMock } from "../../mocks/searchMoviesMock";
+import { searchMoviesMock } from "../../mocks";
 import { setup } from "../../testUtils/setup";
 
 const handlers = [
