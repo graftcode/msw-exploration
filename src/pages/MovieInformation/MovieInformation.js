@@ -9,6 +9,7 @@ import Spinner from "../../components/Spinner/Spinner";
 const MovieInformation = () => {
   const [movieData, setMovieData] = useState(null);
   const [errorMessage, setErrorMessage] = useState("");
+  const [loading, setLoading] = useState(true);
 
   const { movieId } = useParams();
   const navigate = useNavigate();
@@ -19,16 +20,18 @@ const MovieInformation = () => {
 
       if (error) {
         setErrorMessage(error?.message);
+        setLoading(false);
         return;
       }
 
       setMovieData(data);
+      setLoading(false);
     };
 
     fetchMovie();
   }, [movieId]);
 
-  if (!movieData) {
+  if (loading) {
     return <Spinner />;
   }
 
@@ -44,12 +47,12 @@ const MovieInformation = () => {
   }
 
   return (
-    <section className="movie-information">
+    <section className="movie-information" data-testid="movie-information">
       <button className="link-button" onClick={() => navigate(-1)}>
         {"⬅ "}Back
       </button>
       <div className="movie-information-wrapper">
-        <img src={movieData?.Poster} alt={movieData.ImdbID} />
+        <img className="abc" src={movieData?.Poster} alt={movieData.imdbID} />
         <div className="movie-information-text">
           <h2>{movieData.Title}</h2>
           <div className="movie-information-rating">
