@@ -23,6 +23,11 @@ See following files:
 - choosing when to use service workers vs mock service using msw-node
 
 
-As jest runs in node environment unit tests use msw-node to create mock server
+As jest runs in node environment unit tests use msw-node to create mock server instead of service workers.
+
+
+FYI
+
+- pushed env just for the sake of toggling between REACT_APP_ENVIRONMENT variable to toggle between usage of service workers to intercept api calls vs actual api calls
 
 
