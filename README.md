@@ -6,7 +6,7 @@
 
 A simple movie library that allows users to search for movies and view more information about a movie.
 
-The main purpose of this project was to expirement with [Mock Service Worker](https://mswjs.io/).
+The main purpose of this project was to experiment with [Mock Service Worker](https://mswjs.io/).
 
 See following files: 
 
